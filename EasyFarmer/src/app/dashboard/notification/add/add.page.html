@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/dashboard/tabs/notification"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Message</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <div *ngIf="isLoading">
+      <ion-spinner></ion-spinner>
+    </div>
+    <form (ngSubmit)="SubmittedForm(form)" #form="ngForm">
+      <ion-row>
+        <ion-col *ngIf="!isLoading">
+          <ion-item  lines="none">
+            <ion-label position="floating" *ngIf="!message.touched && !message.valid">Enter a Message</ion-label>
+            <ion-textarea
+              type="text"
+              name="message"
+              required
+              ngModel
+              #message="ngModel"
+              lines="none"
+              minlength="10"
+              rows="6" cols="20"
+              placeholder="Type What You Want to Ask"
+            ></ion-textarea>
+
+          </ion-item>
+          <ion-item *ngIf="message.touched && !message.valid" lines="none">
+            <ion-label>Message Length Should be Greater Than 10 Letters</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="btn">
+        <ion-button
+          type="submit"
+          color="primary"
+          expand="full"
+          [disabled]="!form.valid"
+        >
+          Create
+        </ion-button>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,61 @@
+ion-img{
+  object-fit: cover;
+  width:auto;
+  padding: 0%;
+  margin: 0%;
+  height: 350px;
+}
+.img{
+  margin: 0%;
+  padding: 0%;
+}
+
+ion-row
+{
+  margin-bottom: 10px;
+}
+.sawbar{
+  text-align: center;
+}
+
+.btns
+    {
+
+      ion-buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ion-button{
+          border-radius: 25px;
+          margin: 10px;
+          padding: 10px;
+          font-weight: 600;
+          height: 3rem;
+          width: 9rem;
+        }
+      }
+
+
+      .about{
+        background-color: blue;
+        color: white;
+      }
+
+      .about:active{
+        background-color: rgb(3, 3, 109);
+      }
+
+      .remedy{
+        background-color: rgb(49, 148, 49);
+        color: white;
+      }
+
+      .remedy:active{
+        background-color: rgb(3, 82, 3);
+      }
+    }
+    h1{
+      font-weight: 600;
+    }
+   

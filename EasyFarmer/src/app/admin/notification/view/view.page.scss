@@ -1,0 +1,29 @@
+ion-card-header {
+  display: flex;
+  justify-content: end;
+  margin-bottom: -0.6rem;
+  margin-right: -0.5rem;
+
+  ion-card-title {
+    font-size: medium;
+
+    margin-bottom: 0%;
+    margin-right: 0%;
+  }
+
+}
+
+ion-card-content{
+  ion-label{
+    font-size: x-large !important;
+  }
+}
+
+.left-card{
+  margin-right: 3rem;
+}
+
+
+.right-card{
+  margin-left: 3rem;
+}

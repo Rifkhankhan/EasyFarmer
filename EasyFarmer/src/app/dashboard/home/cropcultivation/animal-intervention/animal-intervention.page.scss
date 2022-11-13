@@ -1,0 +1,28 @@
+.img{
+    background-color:rgb(255, 255, 255);
+    height: 100px;
+    margin-top: 10%;
+
+    h3{
+        text-align:end;
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-top:10px;
+        margin-left: 10px;
+    }
+
+    ion-img{
+        height: 90px;
+    }
+}
+.img-io{
+    margin-top: 15px;
+}
+
+.name{
+    padding-top: 10px;
+
+    ion-label{
+        font-size: 1.2rem;
+    }
+}

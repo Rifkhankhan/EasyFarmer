@@ -1,0 +1,60 @@
+
+ion-content{
+
+    --ion-background-color:#9FE6AF;
+
+}
+
+ion-label{
+    text-align: center;
+}
+
+img{
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ion-input {
+    background: rgb(255, 255, 255);
+    border-radius: 10px !important;
+    padding-left: 30px !important;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-bottom: 0px !important;
+    //box-shadow: none !important;
+}
+
+ion-title{
+    text-align: center;
+}
+
+ion-button
+{
+    margin-top: 15px;
+}
+
+ion-textarea{
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding-left: 30px !important;
+  font-size: 1.3em;
+
+}
+ion-select{
+  padding: 2%;
+  background-color: white;
+  margin: 0%;
+}
+.select{
+  padding: 0%;
+  background-color: white;
+  font-size: 1.3em;
+  text-align: left;
+  padding-left: 30px !important;
+  color: rgb(188, 137, 137);
+}
+
+

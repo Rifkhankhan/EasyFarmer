@@ -1,0 +1,113 @@
+{
+  "Dashboard": {
+    "Menu": {
+      "Home": "Home",
+      "Notification": "Notification",
+      "Card": "Card",
+      "Profile": "Profile",
+      "LogOut": "LogOut"
+    },
+    "Home": {
+      "title": "Home",
+      "Select_Your_Crops": "Select Your Crops",
+      "Onion": "Onion",
+      "Carrot": "Carrot",
+      "Ginger": "Ginger",
+      "Pottato": "Pottato",
+      "Turmeric": "Turmeric",
+      "Paddy": "Paddy",
+      "Today's_Report": "Today's Report",
+      "Sun": "Sun",
+      "Mon": "Mon",
+      "Wed": "Wed",
+      "Thu": "Thu",
+      "Fri": "Fri",
+      "Sat": "Sat",
+      "Maximum_Temp": "Maximum Temp",
+      "Manimum_Temp": "Manimum Temp",
+      "Humidity": "Humidity",
+      "Wind_Speed": "Wind Speed",
+      "Crops": {
+        "Onion": "Onion",
+        "Carrot": "Carrot",
+        "Ginger": "Ginger",
+        "Pottato": "Pottato",
+        "Turmeric": "Turmeric",
+        "Paddy": "Paddy"
+      }
+    },
+    "CropCultivation": {
+      "title": "Crop Cultivation",
+      "Fertilizer_Calculator": "Fertilizer Calculator",
+      "Crop_Tips": "Crop Tips",
+      "Diseases": "Diseases",
+      "Animal": "Animal",
+      "Intervention": "Intervention"
+    },
+    "CropTips": {
+      "title": {
+        "Onion": "Onion Tips",
+        "Carrot": "Carrot Tips",
+        "Ginger": "Ginger Tips",
+        "Pottato": "Pottato Tips",
+        "Turmeric": "Turmeric Tips",
+        "Paddy": "Paddy Tips"
+      }
+    },
+    "CropDiseases": {
+      "title": {
+        "Onion": "Onion Diseases",
+        "Carrot": "Carrot Diseases",
+        "Ginger": "Ginger Diseases",
+        "Pottato": "Pottato Diseases",
+        "Turmeric": "Turmeric Diseases",
+        "Paddy": "Paddy Diseases"
+      },
+      "Remedy": "Remedy",
+      "About": "About",
+      "DiseaseName": {
+        "Damping Off": "Damping Off",
+        "White Rot": "White Rot",
+        "Pink Root Rot": "Pink Root Rot",
+        "Black Mould": "Black Mould",
+        "Downy Mildew": "Downy Mildew",
+        "Green Mould": "Green Mould",
+        "Rhizome Rot":"Rhizome Rot",
+        "Leaf Spot":"Leaf Spot",
+        "Leaf Blotch":"Leaf Blotch",
+        "Dry Rot":"Dry Rot",
+        "Dryrot":"Dryrot",
+        "Rhizomerot/Softrot/Pythiumrot":"Rhizomerot /Softrot /Pythiumrot",
+        "Bakanae":"Bakanae",
+        "Narrow Leaf Spot":"Narrow Leaf Spot",
+        "Rice Blast":"Rice Blast",
+        "Sheath Blight":"Sheath Blight",
+        "Stemrot":"Stem Rot",
+        "Alternaria Leaf Blight":"Alternaria Leaf Blight",
+        "Cercospora Leaf Blight":"Cercospora Leaf Blight",
+        "Cottonyrot (Sclerotiniarot)":"Cottonyrot (Sclerotiniarot)",
+        "Blackscurf & Rhizoctoniacanker":"Blackscurf & Rhizoctoniacanker",
+        "Potato Early Blight":"Potato Early Blight"
+      }
+    },
+    "Fertilizer_Calculator": {
+      "title": "Fertilizer Calculator",
+      "EnterTheArea": "Enter The Area",
+      "SelectAreaType": "Select Area Type",
+      "CALCULATE": "CALCULATE",
+      "Hectares": "Hectares",
+      "Acres": "Acres",
+      "Square_Meters": "Square Meters",
+      "Fertilizer_Amount": "Fertilizer Amount"
+    },
+    "AnimalInterventionName":{
+      "title":"Animal Intervention Name",
+      "About":"About",
+      "HowToIdentify":"How To Identify",
+      "HowToManage":"How To Manage",
+      "WhatItDoes":"What It Does",
+      "WhyAndWhereItOccurs":"Why And Where It Occurs",
+      "WhyIsImportant":"Why Is Important"
+    }
+  }
+}

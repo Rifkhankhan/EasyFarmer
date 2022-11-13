@@ -1,0 +1,163 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title text-center>Register</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="openLanguagePopover($event)">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="isLoading">
+    <ion-spinner></ion-spinner>
+  </ion-grid>
+  <ion-grid *ngIf="!isLoading">
+    <form (ngSubmit)="submittedForm(formDetails)" #formDetails="ngForm">
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3" size="10" offset="1">
+          <ion-list lines="none">
+            <ion-item lines="none">
+              <img src="assets/logo.png" alt="logo.png" />
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-input
+                type="text"
+                required
+                name="username"
+                lines="none"
+                ngModel
+                #username="ngModel"
+                placeholder="Username"
+              ></ion-input>
+            </ion-item>
+            <ion-item *ngIf="!username.valid && username.touched" lines="none">
+              <p>Please Enter the User Name</p>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-input
+                type="text"
+                required
+                name="yourname"
+                lines="none"
+                ngModel
+                #yourname="ngModel"
+                placeholder="Your Name"
+              ></ion-input>
+            </ion-item>
+            <ion-item *ngIf="!yourname.valid && yourname.touched" lines="none">
+              <p>Please Enter the Your Name</p>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-input
+                type="text"
+                required
+                name="mobile"
+                lines="none"
+                ngModel
+                #mobile="ngModel"
+                placeholder="Mobile No"
+              ></ion-input>
+            </ion-item>
+            <ion-item *ngIf="!mobile.valid && mobile.touched" lines="none">
+              <p>Please Enter the Mobile Number</p>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-input
+                type="text"
+                required
+                name="nic"
+                lines="none"
+                ngModel
+                #nic="ngModel"
+                placeholder="NIC"
+              ></ion-input>
+            </ion-item>
+            <ion-item *ngIf="!nic.valid && nic.touched" lines="none">
+              <p>Please Enter the Nic Number</p>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-textarea
+                type="text"
+                required
+                name="address"
+                lines="none"
+                ngModel
+                #address="ngModel"
+                placeholder="Your Address"
+              ></ion-textarea>
+            </ion-item>
+            <ion-item *ngIf="!address.valid && address.touched" lines="none">
+              <p>Please Enter the Address</p>
+            </ion-item>
+<!--
+   <ion-item lines="none">
+              <ion-label class="select">Zone</ion-label>
+              <ion-select
+                [interfaceOptions]="customAlertOptions"
+                interface="alert"
+                name="zone"
+                ngModel
+                required
+                #zone="ngModel"
+              >
+                <ion-select-option *ngFor="let zone of zones | filter:zone.zoneEnglish " [value]="zone">
+                  {{zone.zoneEnglish}}
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item *ngIf="!zone.valid && zone.touched" lines="none">
+              <ion-label>Zone Should be Valided</ion-label>
+            </ion-item>
+-->
+           
+<br>
+            <ion-item lines="none">
+              <ion-input
+                type="text"
+                minlength="6"
+                required
+                password
+                name="password"
+                ngModel
+                #password="ngModel"
+                placeholder="Password"
+              ></ion-input>
+            </ion-item>
+            <ion-item *ngIf="!password.valid && password.touched" lines="none">
+              <p>Please Enter the Valid Password</p>
+            </ion-item>
+
+            <ion-button
+              type="submit"
+              size="large"
+              fill="solid"
+              expand="block"
+              color="primary"
+              >SignUp</ion-button
+            >
+            <ion-button
+              type="button"
+              size="large"
+              fill="solid"
+              expand="block"
+              color="primary"
+              routerLink="/login"
+              >Login</ion-button
+            >
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>
+
+<!-- this.http.put(this.url+`/${id}`) -->
+<!-- this.http.delete(this.url+`/${emp.id}`+emp) -->

@@ -1,0 +1,115 @@
+{
+  "Dashboard": {
+    "Menu": {
+      "Home": "வீடு",
+      "Notification": "அறிவிப்பு",
+      "Card": "அட்டை",
+      "Profile": "சுயவிவரம்",
+      "LogOut": "வெளியேறு"
+    },
+    "Home": {
+      "title": "வீடு",
+      "Select_Your_Crops": "உங்கள் பயிர்களைத் தேர்ந்தெடுக்கவும்",
+      "Onion": "வெங்காயம்",
+      "Carrot": "கேரட்",
+      "Ginger": "இஞ்சி",
+      "Pottato": "உருளைக்கிழங்கு",
+      "Turmeric": "மஞ்சள்",
+      "Paddy": "நெல்",
+      "Today's_Report": "இன்றைய அறிக்கை",
+      "Sun": "ஞாயிற்றுக்கிழமை",
+      "Mon": "திங்கட்கிழமை",
+      "Wed": "புதன்கிழமை",
+      "Thu": "வியாழக்கிழமை",
+      "Fri": "வெள்ளிக் கிழமை",
+      "Sat": "சனிக்கிழமை",
+      "Maximum_Temp": "அதிகபட்ச வெப்பநிலை",
+      "Minimun_Temp": "குறைந்தபட்சம் வெப்பநிலை",
+      "Humidity": "ஈரப்பதம்",
+      "Wind_Speed": "காற்றின் வேகம்",
+      "Crops": {
+        "Onion": "வெங்காயம்",
+        "Carrot": "கேரட்",
+        "Ginger": "இஞ்சி",
+        "Pottato": "உருளைக்கிழங்கு",
+        "Turmeric": "மஞ்சள்",
+        "Paddy": "நெல்"
+      }
+    },
+    "CropCultivation": {
+      "title": "பயிர் சாகுபடி",
+      "Fertilizer_Calculator": "உர கணிப்பபொறி",
+      "Crop_Tips": "பயிர் குறிப்புகள்",
+      "Diseases": "நோய்கள்",
+      "Animal": "விலங்கு",
+      "Intervention": "தலையீடு"
+    },
+    "CropTips": {
+      "title": {
+        "Onion": "வெங்காயக் குறிப்புகள்",
+        "Carrot": "கேரட் குறிப்புகள்",
+        "Ginger": "இஞ்சி குறிப்புகள்",
+        "Pottato": "உருளைக்கிழங்கு குறிப்புகள்",
+        "Turmeric": "மஞ்சள் குறிப்புகள்",
+        "Paddy": "நெல் குறிப்புகள்"
+      }
+    },
+    "CropDiseases": {
+      "title": {
+        "Onion": "வெங்காயக் நோய்கள்",
+        "Carrot": "கேரட் நோய்கள்",
+        "Ginger": "இஞ்சி நோய்கள்",
+        "Pottato": "உருளைக்கிழங்கு நோய்கள்",
+        "Turmeric": "மஞ்சள் நோய்கள்",
+        "Paddy": "நெல் நோய்கள்"
+      },
+      "Remedy": "பரிகாரம்",
+      "About": "பற்றி",
+      "DiseaseName": {
+        "DampingOff": "டேம்பிங்ஆஃப்",
+        "WhiteRot": "வெள்ளை அழுகல்",
+        "PinkRootRot": "இளஞ்சிவப்பு வேர் அழுகல்",
+        "BlackMould": "கருப்பு அச்சு",
+        "DownyMildew": "பூஞ்சை காளான்",
+        "GreenMould": "பச்சை அச்சு",
+        "RhizomeRot":"ரைசோம் ரோட்",
+        "LeafSpot":"இலைப்புள்ளி",
+        "LeafBlotch":"இலை கறை",
+        "DryRot":"உலர் அழுகல்",
+        "Dryrot":"உலர் அழுகல்",
+        "Rhizomerot/Softrot/Pythiumrot":"வேர்த்தண்டுக்கிழங்கு அழுகல்/மென்மையான அழுகல்/பைத்தியம் அழுகல்",
+        "Bakanae":"பகானே",
+        "Narrowleafspot(Cercosporaleafspot)":"நெரோலீஃப்ஸ்பாட்(செர்கோஸ்போரல்ஸ்பாட்)",
+        "Riceblast":"அரிசி குண்டு",
+        "Sheathblight":"உறை ப்ளைட்",
+        "Stemrot":"தண்டு அழுகல்",
+        "Alternarialeafblight":"ஆல்டர்னேரியா இலை கருகல் நோய்",
+        "Cercosporaleafblight":"செர்கோஸ்போரா இலை கருகல் நோய்",
+        "Cottonyrot(Sclerotiniarot)":"காட்டோனிரோட்(ஸ்க்லெரோட்டினியாரோட்)",
+        "Blackscurf&Rhizoctoniacanker":"கருப்பு ஸ்கர்ஃப் ரைசோக்டோனியா கேன்கர்",
+        "PotatoEarlyBlight":"உருளைக்கிழங்கு ஆரம்பகால ப்ளைட்"
+
+
+      }
+    },
+    "Fertilizer_Calculator": {
+      "title": "உரக் கால்குலேட்டர்",
+      "EnterTheArea": "பகுதி மதிப்பை உள்ளிடவும்",
+      "SelectAreaType": "பகுதியைத் தேர்ந்தெடுக்கவும் வகை",
+      "CALCULATE": "கணக்கிடு",
+      "Hectares": "ஹெக்டேர்",
+      "Acres": "ஏக்கர்",
+      "Square_Meters": "சதுர மீட்டர்கள்",
+      "Fertilizer_Amount": "உர அளவு"
+    },
+    "AnimalInterventionName": {
+      "title": "விலங்கு தலையீடு பெயர்",
+      "About": "பற்றி",
+      "HowToIdentify": "எப்படி அடையாளம் காண்பது",
+      "HowToManage": "எப்படி நிர்வகிப்பது",
+      "WhatItDoes": "என்ன செய்கிறது",
+      "WhyAndWhereItOccurs": "ஏன் மற்றும் எங்கு இது நிகழ்கிறது",
+      "WhyIsImportant": "ஏன் முக்கியம்"
+    }
+  }
+}

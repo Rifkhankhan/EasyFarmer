@@ -1,0 +1,47 @@
+
+
+
+ion-row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.crop-card
+{
+  width: 100px auto;
+  height: 100px auto;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+ion-col{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.crop-card
+{
+  width: 150px;
+  height: 200px;
+  text-align: center;
+
+  ion-img
+  {
+      width: fit-content;
+      height: 130px !important;
+      text-align: center;
+  }
+  ion-card-title{
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+
+}
+
+

@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{"Dashboard.Home.title" | translate }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openLanguagePopover($event)">
+        <ion-icon name="more" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+        <ion-card class="cardStyle">
+          <ion-item lines="none">
+            <p style="font-weight: 500; color: white; margin-top: 15px">
+              {{"Dashboard.Home.Today's_Report" | translate}}
+            </p>
+            <ion-label id="date" slot="end"
+              >{{ todayDate | date: "EEE dd MMM"}}</ion-label
+            >
+          </ion-item>
+
+
+
+      <ion-item lines="none">
+        <span id="temp"> {{(weatherTemp - 273.15).toFixed(0)}} </span>
+        <span
+          style="
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #f59e0b;
+            margin-bottom: 25px;
+          "
+          >o</span
+        >
+        <img slot="end" width="140px" height="140px" [src]="weatherIcon" />
+      </ion-item>
+
+
+
+      <ion-item lines="none">
+        <span>{{"Dashboard.Home.Maximum_Temp" | translate}}</span>
+        <span slot="end">{{(max_temp - 273.15).toFixed(0)}}℃</span>
+      </ion-item>
+
+      <ion-item lines="none">
+        <!-- <span>Minimum Temp</span> -->
+        <span>Minimum Temp</span>
+        <span slot="end">{{(min_temp - 273.15).toFixed(0)}}℃</span>
+      </ion-item>
+
+      <ion-item lines="none">
+        <span>{{"Dashboard.Home.Humidity" | translate}}</span>
+        <span slot="end">{{humidity}}%</span>
+      </ion-item>
+      <ion-item>
+        <span>{{"Dashboard.Home.Wind_Speed" | translate}}</span>
+        <span slot="end">{{windSpeed}}m/s</span>
+      </ion-item>
+    </ion-card>
+
+    <ion-row>
+      <h2 class="text-center">
+        {{"Dashboard.Home.Select_Your_Crops" | translate}}
+      </h2>
+    </ion-row>
+    <ion-row class="crop-card-row">
+      <ion-col size-sm="1" *ngFor="let crop of crops">
+        <ion-card
+          class="crop-card"
+          [routerLink]="['/dashboard','tabs','home',crop.name]"
+        >
+          <ion-img [src]="crop.img"></ion-img>
+          <ion-card-title>
+            {{ "Dashboard.Home.Crops." + crop.name | translate}}
+          </ion-card-title>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
+<!-- //phrase email and password
+// projectgreen151@gmail.com
+// @Project151 -->

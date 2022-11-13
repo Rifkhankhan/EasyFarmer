@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Add Zone</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <form (ngSubmit)="submitForm(form)" #form="ngForm">
+            <ion-item lines="none">
+              <ion-input
+                type="text"
+                required
+                size="20"
+                name="zoneNameEnglish"
+                ngModel
+                #name="ngModel"
+                placeholder="Enter Zone Name in English"
+
+              ></ion-input>
+
+              <ion-input
+              type="text"
+              required
+              size="20"
+              name="zoneNameTamil"
+              ngModel
+              #name="ngModel"
+              placeholder="Enter Zone Name in Tamil"
+
+            ></ion-input>
+
+            </ion-item>
+            <ion-button type="submit" expand="block" [disabled] = '!form.valid'>Add</ion-button>
+
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

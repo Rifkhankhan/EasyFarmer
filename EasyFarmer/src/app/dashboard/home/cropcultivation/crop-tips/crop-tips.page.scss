@@ -1,0 +1,56 @@
+
+.images{
+  background-color:rgb(255, 255, 255);
+  height: 100px;
+  margin-top: 10%;
+
+  h3{
+      text-align:end;
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding-top:10px;
+      margin-left: 10px;
+  }
+
+  ion-img{
+      height: 90px;
+  }
+}
+/*
+.img{
+  background-color:rgb(255, 255, 255);
+  height: 100px;
+  margin-top: 10%;
+
+  /*
+  h3{
+      text-align:end;
+      font-size: 2.5rem;
+      font-weight: 600;
+      padding-top:10px;
+      margin-left: 10px;
+  }
+
+  ion-img{
+      height: 100px;
+  }
+  
+}
+*/
+
+
+ion-row
+{
+  margin-bottom: 10px;
+}
+.sawbar{
+  text-align: center;
+}
+
+ion-card{
+  background-color: white;
+}
+
+ion-card-content{
+  font-size: 1.2rem;
+}

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/admin/tabs/notification"></ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="isLoading">Loading...</ion-title>
+    <ion-title *ngIf="!isLoading">{{user.yourName}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid *ngIf="isLoading">
+    <ion-spinner color="primary"></ion-spinner>
+  </ion-grid>
+
+  <ion-grid *ngIf="!isLoading">
+    <ion-row>
+      <ion-col>
+        <ion-card class="bg-light left-card" >
+          <ion-card-content>
+            <ion-label>{{notification.message}}</ion-label>
+          </ion-card-content>
+          <ion-card-header>
+            <ion-card-title>{{notification.date | date}} </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+
+        <ion-card class="bg-secondary text-light right-card" *ngIf="notification.reply">
+          <ion-card-content>
+            <ion-label>{{notification.replyMessage}}</ion-label>
+          </ion-card-content>
+
+          <ion-card-header class="text-light">
+            {{notification.replyDate | date}}
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="reply">
+      <ion-col>
+        <form (ngSubmit)="submitForm(form)" #form="ngForm">
+          <ion-textarea
+            rows="5"
+            ngModel
+            name="replyMessage"
+            required
+            placeholder="Enter Reply"
+            class="bg-light mb-2"
+          ></ion-textarea>
+
+          <ion-button type="submit" expand="block" color="primary"
+            >Submit</ion-button
+          >
+        </form>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="!notification.reply && !reply" [(ngModel)]="reply">
+      <ion-col>
+        <ion-button
+          type="button"
+          expand="block"
+          color="primary"
+          (click)="changeReplyMode()"
+          >Reply</ion-button
+        >
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

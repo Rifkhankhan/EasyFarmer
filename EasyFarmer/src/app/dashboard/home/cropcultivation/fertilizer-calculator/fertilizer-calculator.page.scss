@@ -1,0 +1,52 @@
+ion-header{
+  --ion-background-color:#38bdf8;
+}
+
+  .box{
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: auto;
+    height: 220px;
+    border-radius: 20px;
+
+    
+}
+
+ion-select{
+    font-size: 1.4rem;
+}
+
+ion-label{
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+ion-input{
+    font-size: 1.2rem;
+}
+ion-card{
+    //height: 50%;
+    border-radius: 20px;
+    background-color: whitesmoke;   
+}
+ion-card-header{
+    font-size: 1.2rem;
+}
+ion-col{
+    font-size: 1.2rem;
+}
+
+.ansr{
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding-top: 20px;
+    margin-bottom: auto;
+}
+.boxresult{
+    background-color:#9FE6AF;
+    margin-top: 30px;
+    margin-bottom: auto;
+    height: 300px;
+    border-radius: 20px;
+    padding-top: 30px;
+}

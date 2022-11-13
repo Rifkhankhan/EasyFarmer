@@ -1,0 +1,28 @@
+.file
+{
+  // visibility: hidden;
+  padding: 0%;
+  margin: 0%;
+}
+
+.btn
+{
+  color: white;
+  padding: 0% !important;
+}
+
+.list{
+  margin-top: 40px;
+
+  ion-label{
+      font-size: 1.4rem;
+  }
+  ion-input{
+      font-size: 1.4rem;
+  }
+  ion-button{
+      margin-top: 20px;
+      height: 50px;
+      font-size: 1.2rem;
+  }
+}

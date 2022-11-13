@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button
+        [defaultHref]="['/dashboard','tabs','home',crop.name]"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-title
+      >{{"Dashboard.Fertilizer_Calculator.title" | translate}}</ion-title
+    >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="styleCard">
+  <ion-grid>
+    <div class="box">
+      <ion-select
+        interface="popover"
+        [(ngModel)]="type"
+        placeholder="Select Area Type"
+        (ionChange)="validate()"
+      >
+        <ion-select-option value="hect">{{"Dashboard.Fertilizer_Calculator.Hectares" | translate}} </ion-select-option>
+        <ion-select-option value="acr">{{"Dashboard.Fertilizer_Calculator.Acres" | translate}}</ion-select-option>
+        <ion-select-option value="sq">{{"Dashboard.Fertilizer_Calculator.Square_Meters" | translate}}</ion-select-option>
+      </ion-select>
+      <ion-card id="card" style="padding: 5px">
+        <ion-label position="floating"
+          >{{"Dashboard.Fertilizer_Calculator.EnterTheArea" | translate}} :
+        </ion-label>
+        <ion-input
+          type="number"
+          [(ngModel)]="area"
+          (ionChange)="validate()"
+        ></ion-input>
+        <ion-footer>
+          <ion-button
+            [disabled]="buttonDisabled"
+            style="
+              margin-left: 25%;
+              margin-right: 20%;
+              width: 50%;
+              margin-top: 10px;
+            "
+            (click)="Calculate()"
+            size="default"
+            color="danger"
+            >{{"Dashboard.Fertilizer_Calculator.CALCULATE" | translate}}</ion-button
+          >
+        </ion-footer>
+      </ion-card>
+    </div>
+
+    <div *ngIf="calculated" class="boxresult">
+      <ion-card id="card" class="ansr">
+        <ion-card-header style="color: rgb(6, 6, 49); font-weight: bold"
+          >{{"Dashboard.Fertilizer_Calculator. Fertilizer_Amount" | translate}}</ion-card-header
+        >
+        <ion-card-content>
+          <ion-grid>
+            <div *ngFor="let itm of fert | keyvalue">
+              <ion-row *ngIf="itm.value !== null">
+                <ion-col>{{itm.key}} : </ion-col>
+                <ion-col>{{itm.value}} g </ion-col>
+              </ion-row>
+            </div>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-grid>
+</ion-content>
